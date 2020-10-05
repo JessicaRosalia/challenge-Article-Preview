@@ -1,6 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   background-color: #EDF2F8;
   font-size: 13px;
+  font-family: "Roboto", sans-serif;
+}
+
+main {
+  margin: 74px 24px;
+}
+main .exhibition img {
+  width: 100%;
+  border-top-right-radius: 9px;
+  border-top-left-radius: 9px;
+}
+main .description {
+  padding: 41px 33px 33px 33px;
+  background-color: #fff;
+}
+main .description h1 {
+  color: #48556a;
+  margin-bottom: 20px;
+}
+main .description p {
+  max-width: 258px;
+  font-size: 14px;
+  color: #6d7f97;
+  line-height: 24px;
+}
+main .share {
+  height: 60px;
+  background-color: #fff;
+  padding: 0px 33px 0px 33px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom-right-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+main .share .avatar {
+  display: flex;
+  align-items: center;
+}
+main .share .avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 16px;
+}
+main .share .avatar .avatar-desc {
+  display: flex;
+  flex-direction: column;
+}
+main .share .avatar .avatar-desc h3 {
+  color: #48556a;
+  margin-bottom: 8px;
+}
+main .share .avatar .avatar-desc span {
+  color: #9eafc2;
+}
+main .share .network {
+  background: #EEF1F8;
+  border-radius: 50%;
+  margin-top: 4px;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .attribution {
