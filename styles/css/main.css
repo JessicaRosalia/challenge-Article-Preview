@@ -13,62 +13,134 @@ body {
   background-color: #EDF2F8;
   font-size: 13px;
   font-family: "Roboto", sans-serif;
+  max-width: 375px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1040px) {
+  body {
+    max-width: 1040px;
+    font-size: 16px;
+  }
 }
 
 main {
   margin: 74px 24px;
 }
+@media (min-width: 1040px) {
+  main {
+    display: flex;
+    width: 917px;
+    align-items: center;
+    justify-content: center;
+  }
+}
+main .exhibition {
+  height: 100%;
+}
 main .exhibition img {
   width: 100%;
+  height: 100%;
   border-top-right-radius: 9px;
   border-top-left-radius: 9px;
 }
-main .description {
-  padding: 41px 33px 33px 33px;
+@media (min-width: 1040px) {
+  main .exhibition img {
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+  }
+}
+main .exhibition-infos {
   background-color: #fff;
 }
-main .description h1 {
+@media (min-width: 1040px) {
+  main .exhibition-infos {
+    max-width: 558px;
+  }
+}
+main .exhibition-infos .description {
+  padding: 41px 33px 0px 33px;
+}
+@media (min-width: 768px) {
+  main .exhibition-infos .description {
+    padding: 49px 70px 0px 50px;
+  }
+}
+main .exhibition-infos .description h1 {
   color: #48556a;
   margin-bottom: 20px;
 }
-main .description p {
-  max-width: 258px;
+@media (min-width: 1040px) {
+  main .exhibition-infos .description h1 {
+    font-size: 25px;
+  }
+}
+main .exhibition-infos .description p {
   font-size: 14px;
   color: #6d7f97;
   line-height: 24px;
 }
-main .share {
+@media (min-width: 1040px) {
+  main .exhibition-infos .description p {
+    font-size: 16px;
+  }
+}
+main .exhibition-infos .share {
   height: 60px;
-  background-color: #fff;
-  padding: 0px 33px 0px 33px;
+  cursor: pointer;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
   border-bottom-right-radius: 9px;
   border-bottom-left-radius: 9px;
+  margin-top: 33px;
+  padding-left: 33px;
+  padding-right: 33px;
 }
-main .share .avatar {
+@media (min-width: 1040px) {
+  main .exhibition-infos .share {
+    margin-top: 27px;
+    margin-bottom: 20px;
+    padding: 0 80px 0 49px;
+  }
+}
+main .exhibition-infos .share .avatar {
   display: flex;
   align-items: center;
 }
-main .share .avatar img {
+main .exhibition-infos .share .avatar img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
   margin-right: 16px;
 }
-main .share .avatar .avatar-desc {
+main .exhibition-infos .share .avatar .avatar-desc {
   display: flex;
   flex-direction: column;
 }
-main .share .avatar .avatar-desc h3 {
+main .exhibition-infos .share .avatar .avatar-desc h3 {
   color: #48556a;
   margin-bottom: 8px;
 }
-main .share .avatar .avatar-desc span {
+main .exhibition-infos .share .avatar .avatar-desc span {
   color: #9eafc2;
 }
-main .share .network {
+main .exhibition-infos .share .network {
+  display: none;
+  align-items: center;
+}
+main .exhibition-infos .share .network span {
+  color: #9eafc2;
+  margin-right: 20px;
+  letter-spacing: 5px;
+}
+main .exhibition-infos .share .network img {
+  margin-right: 16px;
+}
+main .exhibition-infos .share .share-network {
   background: #EEF1F8;
   border-radius: 50%;
   margin-top: 4px;
@@ -78,7 +150,19 @@ main .share .network {
   align-items: center;
   justify-content: center;
 }
-
+main .exhibition-infos .teste {
+  background-color: #49556b;
+  align-items: center;
+}
+main .exhibition-infos .teste .avatar {
+  display: none;
+}
+main .exhibition-infos .teste .network {
+  display: flex;
+}
+main .exhibition-infos .teste .share-network {
+  margin-top: 0;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
