@@ -19,5 +19,5 @@ This challenge is completely free. Please share it with anyone who will find it 
 <br>
 <h3>Go to the website: </h3> <a href="https://jessicarf18.github.io/clipboard/" target="_blank"> Clipboard - Landing Page </a>
 
-<br>
+<br><br>
 <p align="center"> Challenge by <a href="https://www.frontendmentor.io/challenges" target="_blank">Frontend Mentor</a>. Coded by <i>Rosália Fernandes</i> . </p>
